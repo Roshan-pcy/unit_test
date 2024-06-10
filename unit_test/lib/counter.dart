@@ -4,4 +4,8 @@ class Counter {
   void increment() {
     _counter++;
   }
+
+  void decrement() {
+    _counter++;
+  }
 }
