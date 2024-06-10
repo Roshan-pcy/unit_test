@@ -13,10 +13,17 @@ void main() {
         },
       );
       test(
-        'initail value of counter value is 0',
+        'initail value of counter value is 1',
         () {
           counter.increment();
           expect(counter.getCounter, 1);
+        },
+      );
+      test(
+        'initail value of counter value is 0',
+        () {
+          counter.decrement();
+          expect(counter.getCounter, 0);
         },
       );
     },

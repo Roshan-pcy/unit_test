@@ -6,6 +6,6 @@ class Counter {
   }
 
   void decrement() {
-    _counter++;
+    _counter--;
   }
 }
