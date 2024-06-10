@@ -2,6 +2,15 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:unit_test/counter.dart';
 
 void main() {
+  //pre test
+  //setUp and setAll
+  //post test
+
+  //setup is called before every test is called
+  // setUP->test->setUP-> test->setup->test
+  //setupAll-> test->test->test->test
+
+  //setup is called before all the tests
   group(
     'testing with group',
     () {
@@ -28,4 +37,9 @@ void main() {
       );
     },
   );
+  //treaDown(()=>null)
+  //treaDownAll(()=>null)
+
+  // test->treaDown-> test->treaDown->test
+  //   test->test->test->test->treaDownAll
 }
