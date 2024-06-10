@@ -11,10 +11,15 @@ void main() {
   //setupAll-> test->test->test->test
 
   //setup is called before all the tests
+  late Counter counter;
+  setUp(
+    () {
+      counter = Counter();
+    },
+  );
   group(
     'testing with group',
     () {
-      final Counter counter = Counter();
       test(
         'initail value of counter value is 0',
         () {
@@ -29,10 +34,10 @@ void main() {
         },
       );
       test(
-        'initail value of counter value is 0',
+        'initail value of counter value is -1',
         () {
           counter.decrement();
-          expect(counter.getCounter, 0);
+          expect(counter.getCounter, -1);
         },
       );
     },

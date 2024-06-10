@@ -8,4 +8,8 @@ class Counter {
   void decrement() {
     _counter--;
   }
+
+  void reSet() {
+    _counter = 0;
+  }
 }
