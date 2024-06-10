@@ -40,6 +40,13 @@ void main() {
           expect(counter.getCounter, -1);
         },
       );
+      test(
+        'initail value of counter value is 0',
+        () {
+          counter.reSet();
+          expect(counter.getCounter, 0);
+        },
+      );
     },
   );
   //treaDown(()=>null)
